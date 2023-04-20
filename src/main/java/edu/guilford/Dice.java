@@ -9,6 +9,7 @@ public class Dice {
     //constructor
     public Dice(int sides) {
         this.sides = sides;
+        this.value = 1;
     }
 
     //methods
