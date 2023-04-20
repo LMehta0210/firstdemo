@@ -15,7 +15,16 @@ public class App
         ArrayList<Card> deck = new ArrayList<Card>();
         //create a card
         Card card = new Card("Hearts", "Ace", 1);
+        deck.add(card);
         System.out.println(card);
+
+        //duplicate card and test equals method
+        Card duplicateCard = new Card("Hearts", "Ace", 1);
+        //test equals method
+        if (card.equals(duplicateCard)) {
+            System.out.println("Duplicate card found!: " + card);
+        }
+
         //add card to deck
         deck.add(card);
         //create 20 random cards
